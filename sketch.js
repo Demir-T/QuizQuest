@@ -22,17 +22,28 @@ function draw() {
 
 function mouseClicked() {
 
-  // Question 1
-  if (number === 1) {
-    if (mouseX >= 0 && mouseX < 100) output("No, apples are sour");
-    else if (mouseX >= 100 && mouseX < 200) output("No, bananas are bland");
-    else if (mouseX >= 200 && mouseX < 300) {
-      output("Right, cherries are sweet");
-      pic = loadImage("assets/australia.gif");
-      question = "Where is the capital?";
-      number++;
-    } else output("You missed");
+ // Question 1
+if (number === 1) {
+  if (mouseX >= 30 && mouseX < 180 && mouseY >= 60 && mouseY < 200) {
+    output("No, grapes are too sour");
   }
+  else if (mouseX >= 250 && mouseX < 400 && mouseY >= 60 && mouseY < 200) {
+    output("No, apples are sour");
+  }
+  else if (mouseX >= 30 && mouseX < 160 && mouseY >= 250 && mouseY < 450) {
+    output("No, bananas are bland");
+  }
+  else if (mouseX >= 230 && mouseX < 400 && mouseY >= 270 && mouseY < 420) {
+    output("Right, cherries are sweet");
+    pic = loadImage("assets/animals2.jpg");
+    question = "Click on the dog 🐶";
+    number++;
+  }
+  else {
+    output("You missed!");
+  }
+}
+
 
   // Question 2
   else if (number === 2) {

@@ -25,12 +25,12 @@ function mouseClicked() {
  // Question 1
 if (number === 1) {
   // Grape
-  if (mouseX >= 30 && mouseX < 110 && mouseY >= 80 && mouseY < 170) {
+  if (mouseX >= 30 && mouseX < 100 && mouseY >= 80 && mouseY < 170) {
     output("No, grapes are too sour");
   }
 
   // Apple
-  else if (mouseX >= 120 && mouseX < 200 && mouseY >= 80 && mouseY < 170) {
+  else if (mouseX >= 110 && mouseX < 170 && mouseY >= 80 && mouseY < 170) {
     output("No, apples are sour");
   }
 

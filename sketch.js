@@ -43,7 +43,7 @@ if (number === 1) {
   }
 
   // Banana
-  else if (mouseX >= 40 && mouseX < 120 && mouseY >= 190 && mouseY < 200) {
+  else if (mouseX >= 20 && mouseX < 100 && mouseY >= 190 && mouseY < 200) {
     output("No, bananas are bland");
   }
 

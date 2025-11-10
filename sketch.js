@@ -34,16 +34,16 @@ if (number === 1) {
     output("No, apples are sour");
   }
 
-  // Kiraz (elmanın hemen altında)
-  else if (mouseX >= 170 && mouseX < 260 && mouseY >= 180 && mouseY < 260) {
+  // Cherry
+  else if (mouseX >= 160 && mouseX < 250 && mouseY >= 180 && mouseY < 200) {
     output("Right, cherries are sweet!");
     pic = loadImage("assets/animals2.jpg");
     question = "Click on the dog 🐶";
     number++;
   }
 
-  // Muz (sol alt)
-  else if (mouseX >= 40 && mouseX < 120 && mouseY >= 190 && mouseY < 300) {
+  // Banana
+  else if (mouseX >= 40 && mouseX < 120 && mouseY >= 190 && mouseY < 200) {
     output("No, bananas are bland");
   }
 

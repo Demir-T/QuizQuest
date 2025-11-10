@@ -24,22 +24,22 @@ function mouseClicked() {
   // Question 1
   if (number === 1) {
     // Grape
-    if (mouseX >= 30 && mouseX < 100 && mouseY >= 30 && mouseY < 120) {
+    if (mouseX >= 30 && mouseX < 100 && mouseY >= 80 && mouseY < 170) {
       output("No, grapes are too sour");
     }
     // Apple
-    else if (mouseX >= 110 && mouseX < 170 && mouseY >= 30 && mouseY < 120) {
+    else if (mouseX >= 110 && mouseX < 170 && mouseY >= 80 && mouseY < 170) {
       output("No, apples are sour");
     }
     // Cherry
-    else if (mouseX >= 110 && mouseX < 170 && mouseY >= 120 && mouseY < 200) {
+    else if (mouseX >= 110 && mouseX < 170 && mouseY >= 170 && mouseY < 200) {
       output("Right, cherries are sweet!");
       pic = loadImage("assets/dog.jpg");
       question = "Click on the dog 🐶";
       number++;
     }
     // Banana
-    else if (mouseX >= 20 && mouseX < 100 && mouseY >= 140 && mouseY < 150) {
+    else if (mouseX >= 20 && mouseX < 100 && mouseY >= 120 && mouseY < 150) {
       output("No, bananas are bland");
     }
     else {

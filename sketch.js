@@ -21,41 +21,35 @@ function draw() {
 }
 
 function mouseClicked() {
-
- // Question 1
-if (number === 1) {
-  // Grape
-  if (mouseX >= 30 && mouseX < 100 && mouseY >= 80 && mouseY < 170) {
-    output("No, grapes are too sour");
+  // Question 1
+  if (number === 1) {
+    // Grape
+    if (mouseX >= 30 && mouseX < 100 && mouseY >= 30 && mouseY < 120) {
+      output("No, grapes are too sour");
+    }
+    // Apple
+    else if (mouseX >= 110 && mouseX < 170 && mouseY >= 30 && mouseY < 120) {
+      output("No, apples are sour");
+    }
+    // Cherry
+    else if (mouseX >= 110 && mouseX < 170 && mouseY >= 120 && mouseY < 200) {
+      output("Right, cherries are sweet!");
+      pic = loadImage("assets/dog.jpg");
+      question = "Click on the dog 🐶";
+      number++;
+    }
+    // Banana
+    else if (mouseX >= 20 && mouseX < 100 && mouseY >= 140 && mouseY < 150) {
+      output("No, bananas are bland");
+    }
+    else {
+      output("You missed!");
+    }
   }
-
-  // Apple
-  else if (mouseX >= 110 && mouseX < 170 && mouseY >= 80 && mouseY < 170) {
-    output("No, apples are sour");
-  }
-
-  // Cherry
-  else if (mouseX >= 110 && mouseX < 170 && mouseY >= 170 && mouseY < 250) {
-    output("Right, cherries are sweet!");
-    pic = loadImage("assets/dog.jpg");
-    question = "Click on the dog 🐶";
-    number++;
-  }
-
-  // Banana
-  else if (mouseX >= 20 && mouseX < 100 && mouseY >= 190 && mouseY < 200) {
-    output("No, bananas are bland");
-  }
-
-  else {
-    output("You missed!");
-  }
-}
-
 
   // Question 2
   else if (number === 2) {
-    if (mouseX > 50 && mouseX < 120 && mouseY > 60 && mouseY < 130) {
+    if (mouseX > 50 && mouseX < 120 && mouseY > 10 && mouseY < 80) {
       output("Right - Cute");
       pic = loadImage("assets/sports.jpg");
       question = "Find American Football";
@@ -65,7 +59,7 @@ if (number === 1) {
 
   // Question 3
   else if (number === 3) {
-    if (mouseX > 50 && mouseX < 100 && mouseY > 60 && mouseY < 130) {
+    if (mouseX > 50 && mouseX < 100 && mouseY > 10 && mouseY < 80) {
       output("Correct");
       pic = loadImage("assets/drinks.jpg");
       question = "Which one is coconut juice?";
@@ -75,7 +69,7 @@ if (number === 1) {
 
   // Question 4
   else if (number === 4) {
-    if (mouseX > 250 && mouseX < 350 && mouseY > 50 && mouseY < 150) {
+    if (mouseX > 250 && mouseX < 350 && mouseY > 0 && mouseY < 100) {
       output("Correct");
       pic = loadImage("assets/mc.jpg");
       question = "Which one is the Enderman?";
@@ -85,7 +79,7 @@ if (number === 1) {
 
   // Question 5
   else if (number === 5) {
-    if (mouseX > 400 && mouseX < 460 && mouseY > 50 && mouseY < 150) {
+    if (mouseX > 400 && mouseX < 460 && mouseY > 0 && mouseY < 100) {
       output("Correct!");
       pic = loadImage("assets/space.jpg");
       question = "Which planet is known as the Red Planet?";
@@ -95,7 +89,7 @@ if (number === 1) {
 
   // Question 6
   else if (number === 6) {
-    if (mouseX > 100 && mouseX < 200 && mouseY > 100 && mouseY < 200) {
+    if (mouseX > 100 && mouseX < 200 && mouseY > 50 && mouseY < 150) {
       output("Correct! It's Mars");
       pic = loadImage("assets/animals.jpg");
       question = "Click on the lion";
@@ -105,7 +99,7 @@ if (number === 1) {
 
   // Question 7
   else if (number === 7) {
-    if (mouseX > 300 && mouseX < 400 && mouseY > 150 && mouseY < 250) {
+    if (mouseX > 300 && mouseX < 400 && mouseY > 100 && mouseY < 200) {
       output("Correct! Lion spotted");
       pic = loadImage("assets/countries.jpg");
       question = "Which country has the Eiffel Tower?";
@@ -115,7 +109,7 @@ if (number === 1) {
 
   // Question 8 – Final
   else if (number === 8) {
-    if (mouseX > 400 && mouseX < 500 && mouseY > 200 && mouseY < 300) {
+    if (mouseX > 400 && mouseX < 500 && mouseY > 150 && mouseY < 250) {
       output("🎉 Congratulations! You completed QuizQuest!");
       noLoop();
     } else output("No, try again");

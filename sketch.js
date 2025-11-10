@@ -55,7 +55,7 @@ if (number === 1) {
 
   // Question 2
   else if (number === 2) {
-    if (mouseX > 280 && mouseX < 350 && mouseY > 280 && mouseY < 350) {
+    if (mouseX > 50 && mouseX < 120 && mouseY > 60 && mouseY < 130) {
       output("Right - Cute");
       pic = loadImage("assets/sports.jpg");
       question = "Find American Football";

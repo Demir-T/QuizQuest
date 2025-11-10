@@ -37,7 +37,7 @@ if (number === 1) {
   // Cherry
   else if (mouseX >= 110 && mouseX < 170 && mouseY >= 170 && mouseY < 250) {
     output("Right, cherries are sweet!");
-    pic = loadImage("assets/animals2.jpg");
+    pic = loadImage("assets/dog.jpg");
     question = "Click on the dog 🐶";
     number++;
   }
@@ -56,7 +56,7 @@ if (number === 1) {
   // Question 2
   else if (number === 2) {
     if (mouseX > 280 && mouseX < 350 && mouseY > 280 && mouseY < 350) {
-      output("Right - Canberra");
+      output("Right - Cute");
       pic = loadImage("assets/sports.jpg");
       question = "Find American Football";
       number++;

@@ -7,7 +7,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(900, 900);
   textFont("Arial", 20);
   number = 1;
   question = "Click the best fruit";

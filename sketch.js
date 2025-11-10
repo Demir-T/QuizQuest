@@ -24,21 +24,29 @@ function mouseClicked() {
 
  // Question 1
 if (number === 1) {
-  if (mouseX >= 30 && mouseX < 140 && mouseY >= 60 && mouseY < 200) {
+  // Üzüm (sol üst)
+  if (mouseX >= 30 && mouseX < 110 && mouseY >= 80 && mouseY < 170) {
     output("No, grapes are too sour");
   }
-  else if (mouseX >= 200 && mouseX < 400 && mouseY >= 60 && mouseY < 200) {
+
+  // Elma (üzümün sağında)
+  else if (mouseX >= 160 && mouseX < 250 && mouseY >= 80 && mouseY < 170) {
     output("No, apples are sour");
   }
-  else if (mouseX >= 30 && mouseX < 160 && mouseY >= 250 && mouseY < 450) {
-    output("No, bananas are bland");
-  }
-  else if (mouseX >= 230 && mouseX < 400 && mouseY >= 270 && mouseY < 420) {
-    output("Right, cherries are sweet");
+
+  // Kiraz (elmanın hemen altında)
+  else if (mouseX >= 170 && mouseX < 260 && mouseY >= 180 && mouseY < 260) {
+    output("Right, cherries are sweet!");
     pic = loadImage("assets/animals2.jpg");
     question = "Click on the dog 🐶";
     number++;
   }
+
+  // Muz (sol alt)
+  else if (mouseX >= 40 && mouseX < 120 && mouseY >= 190 && mouseY < 300) {
+    output("No, bananas are bland");
+  }
+
   else {
     output("You missed!");
   }

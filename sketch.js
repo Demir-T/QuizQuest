@@ -35,7 +35,7 @@ if (number === 1) {
   }
 
   // Cherry
-  else if (mouseX >= 160 && mouseX < 250 && mouseY >= 180 && mouseY < 200) {
+  else if (mouseX >= 110 && mouseX < 170 && mouseY >= 170 && mouseY < 250) {
     output("Right, cherries are sweet!");
     pic = loadImage("assets/animals2.jpg");
     question = "Click on the dog 🐶";

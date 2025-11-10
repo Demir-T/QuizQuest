@@ -24,13 +24,13 @@ function mouseClicked() {
 
  // Question 1
 if (number === 1) {
-  // Üzüm (sol üst)
+  // Grape
   if (mouseX >= 30 && mouseX < 110 && mouseY >= 80 && mouseY < 170) {
     output("No, grapes are too sour");
   }
 
-  // Elma (üzümün sağında)
-  else if (mouseX >= 160 && mouseX < 250 && mouseY >= 80 && mouseY < 170) {
+  // Apple
+  else if (mouseX >= 120 && mouseX < 200 && mouseY >= 80 && mouseY < 170) {
     output("No, apples are sour");
   }
 

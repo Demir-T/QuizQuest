@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
   background(255);
-  image(pic, 0, 50);
+  image(pic, 0, 100);
   fill(0);
   text(question, 20, 40);
 }

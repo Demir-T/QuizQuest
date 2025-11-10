@@ -65,7 +65,7 @@ if (number === 1) {
 
   // Question 3
   else if (number === 3) {
-    if (mouseX > 100 && mouseX < 205 && mouseY > 250 && mouseY < 360) {
+    if (mouseX > 50 && mouseX < 100 && mouseY > 60 && mouseY < 130) {
       output("Correct");
       pic = loadImage("assets/drinks.jpg");
       question = "Which one is coconut juice?";

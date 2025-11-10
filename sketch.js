@@ -7,7 +7,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(900, 900);
+  createCanvas(600, 600);
   textFont("Arial", 20);
   number = 1;
   question = "Click the best fruit";
@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
   background(255);
-  image(pic, 0, 50, 900, 800);
+  image(pic, 0, 50);
   fill(0);
   text(question, 20, 40);
 }
